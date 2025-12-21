@@ -67,3 +67,52 @@ The Streamlit application provides a form-based interface where users can enter 
 
 <img width="1051" height="576" alt="Screenshot 2025-12-21 201029" src="https://github.com/user-attachments/assets/63e79d7d-ab86-48af-bf38-9ef7f3055049" />
 
+
+## Project Structure
+
+The repository is organized in a simple and readable manner to clearly separate the application code, model artifacts, and configuration files.
+
+Retention-Risk-Scoring-Model/
+│
+├── app/
+│ └── app.py
+│
+│- retention_risk_scoring_model.keras
+│
+│── scaler.pkl
+│ 
+│── label_encoder_gender.pkl
+│
+│── onehot_encoder_geography.pkl
+│
+├── requirements.txt
+│
+├── README.md
+│
+└── .gitignore
+
+
+## How to Run the Project
+
+Follow the steps below to run the application locally.
+
+### 1. Create a virtual environment
+It is recommended to use a virtual environment to avoid dependency conflicts.
+
+```bash
+python -m venv tf_env
+```
+### 2.Activate the Environment
+```
+tf_env\Scripts\activate
+```
+
+### 3.Install the dependencies
+```
+pip install -r requirements.txt
+```
+
+### 4.Run the Streamlit app
+```
+python -m streamlit run app/app.py
+```
