@@ -13,7 +13,7 @@ The application allows users to input customer details through a simple web inte
 The emphasis of this project is on:
 - Correct preprocessing at inference time
 - Consistency between training and prediction pipelines
-- Practical deployment using Streamlit
+
 
 ---
 
